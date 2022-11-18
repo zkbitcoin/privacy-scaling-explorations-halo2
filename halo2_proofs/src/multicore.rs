@@ -3,3 +3,5 @@
 //! be extended in the future to allow for various parallelism strategies.
 
 pub use rayon::{current_num_threads, scope, Scope};
+#[cfg(feature = "wasm")]
+pub use wasm_bindgen_rayon::init_thread_pool;

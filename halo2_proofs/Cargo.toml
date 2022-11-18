@@ -46,9 +46,10 @@ harness = false
 [dependencies]
 backtrace = { version = "0.3", optional = true }
 rayon = "1.5.1"
+wasm-bindgen-rayon = { version = "1.0.3", optional = true }
 ff = "0.12"
 group = "0.12"
-halo2curves = { git = 'https://github.com/privacy-scaling-explorations/halo2curves', tag = '0.3.0' }
+halo2curves = { git = 'https://github.com/privacy-scaling-explorations/halo2curves', tag = "0.2.1" }
 rand_core = { version = "0.6", default-features = false }
 tracing = "0.1"
 blake2b_simd = "1"
@@ -73,6 +74,7 @@ dev-graph = ["plotters", "tabbycat"]
 gadget-traces = ["backtrace"]
 sanity-checks = []
 batch = ["rand_core/getrandom"]
+
 
 [lib]
 bench = false
